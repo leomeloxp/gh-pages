@@ -1,37 +1,27 @@
-### Global gh-pages pre-amble
+### Global Build Settings
 safe: true
 lsi: false
-pygments: true
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+markdown: kramdown
+url: "http://leomeloxp.github.io"
 
 
-### The following properties will change on a project-by-project basis
+## Global Settings
+email: leomeloxp@gmail.com
+twitter_username: leomeloxp
+github_username:  leomeloxp
 
-# Context path in the remote website (usually /<project>), will be prepended to absolute URLs for static resources
-baseurl: /gh-pages
 
-# Name of the project for display in places like page titles
-name: Spring Framework
+## Individual Website Settings
+title: Leo's Github Projects
+description: > # this means to ignore newlines until "baseurl:"
+  This is a base website where I might share some of my projects as subpages.
+  The main purpose of this website is to actually improve my Rails skills and teach myself some jekyll.
+baseurl: "" # the subpath of your site
 
-# ID of the project in the metadata API at spring.io (if this is not a
-# valid project ID the javascript widgets in the home page will not work)
-project: spring-framework
-
+name: gh-pages
+project: gh-pages
+main_site_url: http://leomeloxp.github.io
+projects_site_url: http://leomeloxp.github.io/projects
 # Project github URL
-github_repo_url: http://github.com/spring-projects/spring-framework
-
-# Project forum URL
-forum: http://forum.spring.io/forum/spring-projects/container
-
-# If you want to include a custom pom.xml or gradle template set these value to true and add _include files
-custom_pom_template: false
-custom_gradle_template: false
-
-
-### The following properties are constant for most projects
-
-main_site_url: http://spring.io
-projects_site_url: http://projects.spring.io
-questions_url: http://spring.io/questions
+github_repo_url: https://github.com/leomeloxp/gh-pages
